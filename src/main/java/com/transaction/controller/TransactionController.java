@@ -1,5 +1,6 @@
 package com.transaction.controller;
 
+import com.transaction.Constants;
 import com.transaction.data.*;
 import com.transaction.service.RuleService;
 import org.slf4j.Logger;
@@ -16,7 +17,7 @@ public class TransactionController {
     @Autowired
     private RuleService ruleService;
 
-    @RequestMapping(value = "check", method = RequestMethod.POST)
+    @RequestMapping(value = Constants.RULE_CHECK, method = RequestMethod.POST)
     public @ResponseBody TransactionResponse processTransaction(@RequestBody Transaction transaction){
         return ruleService.process(transaction);
     }

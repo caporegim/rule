@@ -43,7 +43,7 @@ public class TransactionControllerTest {
                 101,
                 TransactionCurrency.RUB,
                 new Date().getTime());
-        mockMvc.perform(MockMvcRequestBuilders.post("/transaction")
+        mockMvc.perform(MockMvcRequestBuilders.post(Constants.RULE_CHECK)
                                                 .contentType(MediaType.APPLICATION_JSON)
         .content(gson.toJson(transaction)))
                 .andDo(MockMvcResultHandlers.print())

@@ -46,4 +46,16 @@ public class Transaction {
     public Date getDate() {
         return new Date(date);
     }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "transactionType=" + transactionType +
+                ", direction=" + direction +
+                ", transactionSource=" + transactionSource +
+                ", sum=" + sum +
+                ", currency=" + currency +
+                ", date=" + date +
+                '}';
+    }
 }
