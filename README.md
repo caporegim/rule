@@ -1,1 +1,1 @@
-Микросервис проверки транзакций на основе Spring Boot по правилам хранящимся в базе (H2).
+Microservice for transaction check by rules stored in database (H2). Based on Spring Boot.
